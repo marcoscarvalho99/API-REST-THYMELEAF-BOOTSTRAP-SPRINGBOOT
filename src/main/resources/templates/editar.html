@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="@{/salvar}" method="post" th:object="${medico}">
+        id: <input type="text" th:field="*{id}" readonly/>  <br>
+        nome: <input type="text" th:field="*{nome}"> <br>
+        idade <input type="text" th:field="*{idade}"> <br>
+
+        <button type="submit"> Salvar </button>
+    </form>
+</body>
+</html>
