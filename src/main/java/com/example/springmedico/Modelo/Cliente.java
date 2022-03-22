@@ -3,7 +3,7 @@ package com.example.springmedico.Modelo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.hateoas.RepresentationModel;
+//import org.springframework.hateoas.RepresentationModel;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,7 +14,8 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @Data
 @Entity
-public class Cliente extends RepresentationModel<Cliente> {
+public class Cliente  {
+//    extends RepresentationModel<Cliente>
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
